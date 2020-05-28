@@ -1,0 +1,68 @@
+.m-f {
+    display: flex;
+}
+
+.m-f-fdc {
+    flex-direction: column;
+}
+
+.m-f-acsa {
+    align-content: space-around;
+}
+
+.m-f-jcsa {
+    justify-content: space-around;
+}
+
+.m-f-f {
+    flex: 1;
+}
+
+.m-f-jcfe {
+    justify-content: flex-end;
+}
+
+.m-f-jcc {
+    justify-content: center;
+}
+
+.m-f-aic {
+
+    align-items: center;
+}
+
+.text-red-color {
+    color: #f40;
+}
+
+.text-white-color {
+    color: #fff;
+}
+
+.div-black-color {
+    background-color: #000;
+}
+
+.div-red-color {
+    background-color: #f40;
+}
+
+.text-gray-color {
+    color: #999;
+}
+
+.m-f-fww {
+    flex-wrap: wrap;
+}
+
+/* 多行超出部分换行 */
+.div-text-overflow-hidden-2 {
+    overflow: hidden;
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-line-clamp: 2;
+
+    
+}

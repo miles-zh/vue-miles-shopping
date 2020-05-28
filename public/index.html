@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <title>Miles Shopping</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body,html{
+        height: 100%;
+        width: 100%;
+          
+      }
+    </style>
+    <script>
+      var devicePixelRatio = window.devicePixelRatio;
+    var scale = 1 / devicePixelRatio
+    var metaElement = document.createElement('meta');
+    metaElement.setAttribute('name', 'viewport');
+    metaElement.setAttribute(
+      'content',
+      'initial-scale=' + scale + ', maximum-scale=' + scale + ',minimum-scale=' + scale + ',user-scalable=no'
+    );
+    document.documentElement.firstElementChild.appendChild(metaElement)
+    let width=window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      width=width > 750?750:width
+    var rem = width / 10
+    document.documentElement.style.fontSize = rem + 'px'
+    </script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+    
+  </head>
+  <body>
+    
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
