@@ -47,6 +47,7 @@
 <script>
 import CountIncrementDecrementButton from '../common/CountIncrementDecreamentButton'
 import Tip from '../common/Tip'
+
 export default {
   data() {
     return {
@@ -67,7 +68,7 @@ export default {
       // console.log(this.$store)
   },
   mounted(){
-    
+   
   },
   components:{
     CountIncrementDecrementButton,

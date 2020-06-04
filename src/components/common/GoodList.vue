@@ -3,7 +3,7 @@
       <div class="hot-goods-content">
         <div class="hot-goods-item" v-for="(item,index) in goodsList" :key="index" >
           <div class="hot-goods-img">
-            <img :src="item.img_src" @click="goGoodsDetail(item.id)" />
+            <img :src="item.img_src" @click="goGoodsDetail(item.id)" alt="图片稍等" />
           </div>
           <div class="hot-goods-price">
             <div class="sell-price">￥{{item.sell_price}}</div>
