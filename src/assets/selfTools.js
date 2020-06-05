@@ -74,12 +74,15 @@ function dealChatTimestamp(value) {
         
         nowMonth = setDatePrefixZero(nowMonth)
         nowDay = setDatePrefixZero(nowDay)
+        // console.log(dateDay,nowDay)
     // console.log(dateHours + ':' + dateMinutes + ':' + dateSeconds)
     if (dateYear === nowYear && dateMonth === nowMonth && dateDay === nowDay) {
         // 当天日期处理
+    //    console.log(1)
         return dateHours + ':' + dateMinutes + ':' + dateSeconds
     } else if (dateYear === nowYear) {
         // 当年日期处理
+        // console.log(2)
         return `${dateMonth}月${dateDay}日 ${dateHours}:${dateMinutes}:${dateSeconds}`
     } else {
         // 隔年日期处理

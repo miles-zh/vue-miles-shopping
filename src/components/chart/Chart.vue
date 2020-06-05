@@ -246,7 +246,7 @@ export default {
     // console.log(this.swiperItems)
   },
   created(){
-    console.log(expressionUrlArr)
+    // console.log(expressionUrlArr)
       this.getSwiperItems(expressionUrlArr)
   },
   computed:{
@@ -257,18 +257,20 @@ export default {
       // console.log(list)
       let len=list.length
       for(let i=0;i<len;i++){
-        
+        // console.log(list[i].createdTime)
         if(i===0){
           list[0].createdShowTime=dealChatTimestamp(list[0].createdTime)
           continue;
         } 
         let difference = list[i].createdTime - list [i-1].createdTime 
+        // console.log(difference+'-dd-'+i)
         if(difference < 60000){
-          list[len-1].createdShowTime= ""
+          list[i].createdShowTime= ""
         }else{
-          list[len-1].createdShowTime= dealChatTimestamp(list[len-1].createdTime)
+          list[i].createdShowTime= dealChatTimestamp(list[i].createdTime)
         } 
       }
+      // console.log(list)
       return list
     }
   }
